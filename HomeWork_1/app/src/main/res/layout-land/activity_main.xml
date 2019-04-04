@@ -18,10 +18,6 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,13 +45,6 @@
             android:text="@string/text_autor"
             android:textSize="22sp"
             android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +54,6 @@
             android:maxLines="6"
             android:ellipsize="end"
             android:scrollbars="none"
-            android:scrollbarStyle="outsideOverlay"
             android:isScrollContainer="true"
             android:id="@+id/mainText"
             android:text="@string/text_main" />
@@ -81,7 +69,6 @@
             android:padding="5dp"
             android:text="@string/text_button"
             android:textColor="@color/textcol_white" />
-    </LinearLayout>
 
 
 </LinearLayout>
