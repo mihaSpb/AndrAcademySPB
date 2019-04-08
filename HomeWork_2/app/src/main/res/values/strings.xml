@@ -12,4 +12,6 @@
     <string name="text_room">Room 1</string>
     <string name="text_time">11:15</string>
     <string name="text_date">27 November</string>
+    <string name="image_autor">Image Autor</string>
+    <string name="image_flag">Image Flag</string>
 </resources>

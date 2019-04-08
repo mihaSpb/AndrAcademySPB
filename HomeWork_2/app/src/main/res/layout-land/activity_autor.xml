@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageAutor"
-        android:layout_width="145dp"
-        android:layout_height="125dp"
+        android:layout_width="106dp"
+        android:layout_height="87dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/oval"
@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/imageFlag"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="31dp"
+        android:layout_height="26dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/ovalmini"
@@ -47,25 +47,25 @@
         android:id="@+id/imageTwit"
         android:layout_width="33dp"
         android:layout_height="33dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#ffffffff"
-        app:layout_constraintStart_toEndOf="@+id/imageAutor"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/twit"
-        android:contentDescription="TODO" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/textcol_white"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/textAbout"
+        app:layout_constraintEnd_toStartOf="@+id/imageTelega"
+        app:srcCompat="@drawable/twit" />
 
     <ImageButton
         android:id="@+id/imageTelega"
         android:layout_width="33dp"
         android:layout_height="33dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="#ffffffff"
-        app:layout_constraintStart_toEndOf="@+id/imageTwit"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/telega"
-        android:contentDescription="TODO" />
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/textAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/telega" />
 
     <TextView
         android:id="@+id/textView5"
@@ -94,9 +94,9 @@
     <TextView
         android:id="@+id/textAbout"
         android:layout_width="wrap_content"
-        android:layout_height="168dp"
+        android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:maxLines="10"
+        android:maxLines="3"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
         android:paddingTop="5dp"
@@ -119,12 +119,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="3dp"
         android:background="@color/color_aboutFon"
         android:gravity="start"
         android:paddingStart="4dp"
         android:text="@string/text_head"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -132,15 +132,15 @@
         android:id="@+id/textRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:paddingStart="3dp"
         android:paddingEnd="3dp"
         android:paddingBottom="3dp"
         android:text="@string/text_room"
-        android:textStyle="bold"
-        android:textSize="24sp"
         android:textColor="@color/color_black"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonTopic" />
 
@@ -148,43 +148,43 @@
         android:id="@+id/textTeg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/color_teg"
         android:paddingStart="3dp"
         android:paddingEnd="3dp"
         android:paddingBottom="3dp"
-        android:textSize="24sp"
-        android:background="@color/color_teg"
         android:text="@string/text_teg"
         android:textColor="@color/textcol_white"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRoom" />
+        app:layout_constraintStart_toEndOf="@+id/textRoom"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTopic" />
 
     <TextView
         android:id="@+id/textTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/text_time"
         android:textColor="@color/color_black"
-        android:textStyle="bold"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTeg" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textDate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTopic" />
 
     <TextView
         android:id="@+id/textDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/text_date"
         android:textColor="@color/color_button"
-        android:textStyle="bold"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/textTime"
-        app:layout_constraintTop_toBottomOf="@+id/textTeg" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTopic" />
 
 </android.support.constraint.ConstraintLayout>

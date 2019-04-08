@@ -6,4 +6,6 @@
     <color name="textcol_white">#ffffff</color>
     <color name="color_teg">#ff0000</color>
     <color name="color_button">#0000ff</color>
+    <color name="color_aboutFon">#00ffff</color>
+    <color name="color_black">#000000</color>
 </resources>
